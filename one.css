@@ -1,12 +1,12 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 #drop_zone {
-    background-color: #eee;
+    background-color: rgba(44, 130, 201, 1);
     border: #999 1px solid ;
-    width: 280px;
-    height: 400px;
-    padding: 15px;
-    margin: 20px 20px 20px 20px;
+    width: 360px;
+    height: 600px;
+    padding: 8px;
+    margin: 10px 10px 10px 10px;
     font-size: 19px;
     display: table-cell;
     vertical-align: bottom;
@@ -14,19 +14,20 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 #top_part {
-    background-color: #eee;
-    border: #999 1px solid ;
-    width: 280px;
-    height: 200px;
+    background-color: rgba(44, 130, 201, 1);
+    
+    width: 360px;
+    height: 300px;
     padding: 15px; 
     font-size: 19px;
     vertical-align: top;
     padding-top: 25px;
+    
 }
 
 #bottom_part {
-    background-color: #eee;
-    border: #999 1px solid ;
+    background-color: rgba(44, 130, 201, 1);
+    /*border: #999 1px solid ;*/
     width: 280px;
     height: 200px;
     padding: 15px;
@@ -41,29 +42,29 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     border-bottom: 1px solid ;
     width: 100px;
     height:20px;
-    
-    
     font-size: 20px;
-    padding: 5px;
-    border: 2px solid #F44336;
-    margin: 10px  10px 10px 5px;
+    padding: 9px;
+    background-color: #FFFFFF;
+    border: 2px solid rgba(36, 37, 42, 1);
     box-shadow: inset 1px 1px 10px 0 rgba(15, 15, 15, 0.2);
+    margin: 1px  10px 30px 5px;
     border-radius: 5px;
     cursor: pointer;
-    
+    vertical-align: bottom;
 }
 
 .snap
 {
-    
-    width: 270px;
-    height: 30px;
+
+    width: 310px;
+    height: 40px;
     padding: 7px;
-    background-color: #F44336;
-    color: #FFFFFF;
-    margin: 10px 10px 25px 5px ;
+    background-color: rgba(25, 181, 254, 1);
+   /* color: #FFFFFF;*/
+    margin: 08px 8px 25px 5px ;
     font-family: Oxygen, sans-serif;
     border-radius: 3px;
+    vertical-align: bottom;
 }
 
 .over {
