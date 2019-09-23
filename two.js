@@ -12,7 +12,7 @@ window.onload = function () {
 
 
 
-    var dropZone1 = _('replace1');
+    var dropZone1 = _('replace1');//feilds
     var dropZone2 = _('replace2') ;   
     // var object1 = _('object1');
     //var object2 = _('object2');
@@ -24,7 +24,7 @@ window.onload = function () {
     // function myfunction(){
   //  function objectsbox(){
     for (i = 1; i < 5; i++) {
-        var obj = document.createElement("div");
+        var obj = document.createElement("div");// creating div blocks(topics)
         obj.className = "obj";
         obj.id = 'object';
         obj.textContent = 'object' + i;
@@ -35,51 +35,26 @@ window.onload = function () {
 var objts = document.getElementsByClassName("obj");
 
 for (let i = 0; i < objts.length; i++) {
-   // objts[i].addEventListener('dragstart', handleDragStart, false);
-    //objts[i].addEventListener('dragend', handleDragEnd, false);
+   
     objts[i].addEventListener('touchstart', handleTouchStart, false);
     objts[i].addEventListener('touchmove', handleTouchMove, false);
     objts[i].addEventListener('touchend', handleTouchEnd, false);
 }
-/*object2.addEventListener('dragstart', handleDragStart, false);
-object2.addEventListener('dragend', handleDragEnd, false);
+/*
 object2.addEventListener('touchstart', handleTouchStart, false);
 object2.addEventListener('touchmove', handleTouchMove, false);
 object2.addEventListener('touchend', handleTouchEnd, false);
 
-object3.addEventListener('dragstart', handleDragStart, false);
-object3.addEventListener('dragend', handleDragEnd, false);
+
 object3.addEventListener('touchstart', handleTouchStart, false);
 object3.addEventListener('touchmove', handleTouchMove, false);
 object3.addEventListener('touchend', handleTouchEnd, false);
-object4.addEventListener('dragstart', handleDragStart, false);
-object4.addEventListener('dragend', handleDragEnd, false);
+
 object4.addEventListener('touchstart', handleTouchStart, false);
 object4.addEventListener('touchmove', handleTouchMove, false);
 object4.addEventListener('touchend', handleTouchEnd, false);*/
 
 
-
-/*
-function handleDragStart(e) {
-    e
-        .target
-        .getAttribute('id');
-    e.dataTransfer.dropEffect = "move";
-    e
-        .dataTransfer
-        .setData("text", e.target.getAttribute('id'));
-}
-
-function handleDragEnd(e) {
-    if (droppedIn == false) {
-        e
-            .target
-            .getAttribute('id') + " go.";
-    }
-    droppedIn = false;
-
-}*/
 
 
 
@@ -89,9 +64,7 @@ function handleDragEnd(e) {
 function handleTouchStart(e, item) {
 
 
-    e
-        .target
-        .getAttribute('id');
+   
     originalX = (e.target.offsetLeft-10 ) + "px";
     originalY = (e.target.offsetTop -10) + "px";
     activeEvent = 'start';
@@ -132,16 +105,12 @@ function handleTouchEnd(e) {
 
             droppedIn = true;
 
-            e
-                .target
-            //.getAttribute('id') + " into drop zone";
+           
 
         } else {
             e.target.style.left = originalX;
             e.target.style.top = originalY;
-            //e
-            //  .target
-            // .getAttribute('id') + " go.";
+            
         }
     }
 }
